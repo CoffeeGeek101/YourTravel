@@ -34,12 +34,12 @@ export const HeroPage: React.FC = () => {
 
                     <div ref={divRef} className="block z-10 lg:hidden lg:z-0 relative" onClick={() => setIsClick(!isClick)} >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"
-                            className="w-6 h-6">
+                            className="w-6 h-6 hover:scale-125 cursor-pointer">
                             <path fillRule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm8.25 5.25a.75.75 0 01.75-.75h8.25a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75z" clipRule="evenodd" />
                         </svg>
 
                         {
-                            isClick ? (<div className='absolute h-96 w-40 bg-white p-5 rounded-sm flex flex-col gap-6 text-center right-0 top-8'>
+                            isClick ? (<div className='absolute h-96 w-40 bg-white py-5 rounded-sm flex flex-col gap-2 text-center right-0 top-8'>
                                 {[
                                     ['Destinations', '#'],
                                     ['Members', '#'],
@@ -48,7 +48,7 @@ export const HeroPage: React.FC = () => {
                                     ['Gallery', '#'],
                                     ['Sign in', '#']
                                 ].map(([title, link]) => (
-                                    <div className='text-base font-popins font-light'>{title}</div>
+                                    <div className=' hover:bg-slate-100 cursor-pointer hover:text-orange-500 py-[10px] text-sm font-popins font-light'>{title}</div>
                                 ))}
                                 <div className='flex gap-1 items-center justify-center mt-12'>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffb66c" className="w-4 h-4 font-white" >
@@ -64,19 +64,22 @@ export const HeroPage: React.FC = () => {
                         }
 
                     </div>
-                    <div className='hidden lg:flex flex-row gap-8 text-white font-popins'>
-                        {
-                            [
-                                ['Destinations', '#'],
-                                ['Members', '#'],
-                                ['About us', '#'],
-                                ['Testimonials', '#'],
-                                ['Gallery', '#'],
-                                ['Sign in', '#']
-                            ].map(([title,link])=>(
+                    <div className='hidden  lg:flex z-10 flex-row gap-8 text-white font-popins'>
+                        {[
+                            ['Destinations', '#'],
+                            ['Members', '#'],
+                            ['About us', '#'],
+                            ['Testimonials', '#'],
+                            ['Gallery', '#'],
+                            ['Sign in', '#']
+                        ].map(([title, link]) => (
+                            <a
+                                href={link}
+                                className="hover:text-orange-200 hover:scale-105"
+                            >
                                 <p>{title}</p>
-                            ))
-                        }
+                            </a>
+                        ))}
                     </div>
                 </div>
 
