@@ -15,7 +15,7 @@ interface links{
 }
 
 const Footer:FC<FooterProps> = ({footerProp})=> {
-  console.log(footerProp);
+  // console.log(footerProp);
   return (
     <div className='mt-28 bg-orange-400 text-white'>
       <div className='flex flex-col gap-3 p-5 lg:py-14'>
