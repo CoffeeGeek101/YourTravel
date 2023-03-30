@@ -51,3 +51,19 @@ export const Image = [
         frequency : '123'
     }
 ];
+
+export const GalleryImg = [
+    {
+        link : 'https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+        location : 'Bali,Indonesia'
+    },{
+        link:'https://images.unsplash.com/photo-1576924542622-772281b13aa8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+        location : 'Amsterdam, Netherlands'
+    },{
+        link:'https://images.unsplash.com/photo-1601047095317-25a0ad9933f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+        location:'Kashmir,India'
+    },{
+        link:'https://images.unsplash.com/photo-1492136344046-866c85e0bf04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80',
+        location : 'Paris,France'
+    }
+]
